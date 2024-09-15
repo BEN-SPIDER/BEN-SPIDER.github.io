@@ -1,14 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <title>Trắc nghiệm chính</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Trắc Nghiệm Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .dropdown-content {
+            display: none;
+            margin-left: 20px;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-  <h1>Danh sách các bài trắc nghiệm</h1>
-  <ul>
-    <li><a href="https://ben-spider.github.io/THI THỬ CAO ÁP/index.html">THI QTAT 959 PHẦN CAO ÁP</a></li>
-    <li><a href="https://BEN-SPIDER.github.io/THI THỬ CAO ÁP/index.html">Trắc nghiệm 2</a></li>
-    <!-- Thêm các bài trắc nghiệm khác -->
-  </ul>
+
+    <h1>Học Trắc Nghiệm Online</h1>
+
+    <ul>
+        <li class="dropdown">1. Thi Quy Trình
+            <ul class="dropdown-content">
+                <li class="dropdown">+ Quy Trình An Toàn
+                    <ul class="dropdown-content">
+                        <li><a href="#">* Kiến Thức Chung</a></li>
+                        <li><a href="#">* Cao Áp</a></li>
+                        <li><a href="#">* Hạ Áp</a></li>
+                        <li><a href="#">* Hỗ Trợ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">+ Quy Phạm Trang Bị Điện</a></li>
+                <li class="dropdown">+ Quy Trình Kinh Doanh
+                    <ul class="dropdown-content">
+                        <li><a href="#">* Ghi Điện</a></li>
+                        <li><a href="#">* Giao Tiếp</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li class="dropdown">2. Thi Nghiệp Vụ
+            <ul class="dropdown-content">
+                <li class="dropdown">+ Nghiệp Vụ 1
+                    <ul class="dropdown-content">
+                        <li><a href="#">* Nghiệp Vụ 1_1</a></li>
+                        <li><a href="#">* Nghiệp Vụ 1_2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">+ Nghiệp Vụ 2</a></li>
+            </ul>
+        </li>
+
+        <li>3. Nâng Bậc Sát Hạch Nghề
+            <ul>
+                <li><a href="#">+ Công Nhân Kỹ Thuật</a></li>
+                <li><a href="#">+ Công Nhân Kinh Doanh</a></li>
+            </ul>
+        </li>
+    </ul>
+
 </body>
 </html>
