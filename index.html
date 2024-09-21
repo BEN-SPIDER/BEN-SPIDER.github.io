@@ -35,12 +35,15 @@
             white-space: nowrap;
             background-color: #f4f4f4;
              margin-left: 10px; /* Khoảng cách từ chữ cuối cùng của mục cha */
+             z-index: 1; /* Hiển thị bên trên */
         }
         li ul li {
             background-color: #f4f4f4;
             color: #333;
             padding: 5px;
-            margin: 0;
+            /*margin: 0;*/
+             margin-left: 10px; /* Khoảng cách từ chữ cuối cùng của mục cha */
+             z-index: 1; /* Hiển thị bên trên */
         }
         li:hover > ul {
             display: block;
