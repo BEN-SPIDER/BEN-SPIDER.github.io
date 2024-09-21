@@ -20,20 +20,32 @@
         }
         li {
             margin: 10px 0;
-            cursor: pointer;
             background-color: #007bff;
             color: white;
             padding: 10px;
             border-radius: 5px;
+            position: relative;
         }
         li ul {
             display: none;
-            padding-left: 20px;
-            margin-top: 5px;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            padding-left: 0;
+            white-space: nowrap;
+            background-color: #f4f4f4;
         }
         li ul li {
             background-color: #f4f4f4;
             color: #333;
+            padding: 10px;
+            margin: 0;
+        }
+        li:hover > ul {
+            display: block;
+        }
+        li ul li:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
@@ -42,19 +54,18 @@
 <h1>Học Trắc Nghiệm Online</h1>
 
 <ul>
-    <li onclick="toggleDropdown(this)">1. Thi Quy Trình
+    <li>1. Thi Quy Trình
         <ul>
-            <li onclick="toggleDropdown(this)">1.1 Quy Trình An Toàn
-                <ul class="dropdown-content">
-                    <li><a href="https://BEN-SPIDER.github.io/QTAT959_2023/2023_KIEN_THUC_CHUNG/index.html">* Kiến Thức Chung</a></li>
-                    <li><a href="https://BEN-SPIDER.github.io/QTAT959_2023/2023_CAO_AP/index.html">* Cao Áp</a></li>
-                    <li><a href="https://BEN-SPIDER.github.io/QTAT959_2023/2023_HA_AP/index.html">* Hạ Áp</a></li>
-                    <li><a href="https://BEN-SPIDER.github.io/QTAT959_2023/2023_HO_TRO/index.html">* Hỗ Trợ</a></li>
-                   
+            <li>1.1 Quy Trình An Toàn
+                <ul>
+                    <li>* Kiến Thức Chung</li>
+                    <li>* Cao Áp</li>
+                    <li>* Hạ Áp</li>
+                    <li>* Hỗ Trợ</li>
                 </ul>
             </li>
             <li>+ Quy Phạm Trang Bị Điện</li>
-            <li onclick="toggleDropdown(this)">1.2 Quy Trình Kinh Doanh
+            <li>1.2 Quy Trình Kinh Doanh
                 <ul>
                     <li>* Chăm Sóc Khách Hàng</li>
                     <li>* Dịch Vụ Điện</li>
@@ -62,13 +73,13 @@
             </li>
         </ul>
     </li>
-    <li onclick="toggleDropdown(this)">2. Thi Nghiệp Vụ
+    <li>2. Thi Nghiệp Vụ
         <ul>
             <li>* Nghiệp Vụ 1</li>
             <li>* Nghiệp Vụ 2</li>
         </ul>
     </li>
-    <li onclick="toggleDropdown(this)">3. Nâng Bậc Sát Hạch Nghề
+    <li>3. Nâng Bậc Sát Hạch Nghề
         <ul>
             <li>* Công Nhân Kỹ Thuật</li>
             <li>* Công Nhân Kinh Doanh</li>
@@ -76,55 +87,5 @@
     </li>
 </ul>
 
-<script>
-    function toggleDropdown(element) {
-        var subList = element.querySelector('ul');
-        if (subList.style.display === "block") {
-            subList.style.display = "none";
-        } else {
-            subList.style.display = "block";
-        }
-    }
-</script>
-
-</body>
-</html>
-
-      <a href="https://info.flagcounter.com/xvr9"><img src="https://s11.flagcounter.com/mini/xvr9/bg_FFFFFF/txt_042DF2/border_FFFFFF/flags_0/" alt="Flag Counter" border="0"></a>
-  <h1>RÚT KINH NGHIỆM CÁC VỤ TNLĐ ĐÃ TỪNG XẢY RA</h1>
-
-    <div class="video-grid">
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/2H5Gomz4LV8?si=Vn_Yhq8Gw3EyTSJg" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/vikr4C4sLaY?si=A9xx0DY9jFsW_b41" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/S5iulJkpMJQ?si=l6rY-W7xWNYGftc-" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/6AKHpxq7WpQ?si=ZnXlKxr9uC179I7y" frameborder="0" allowfullscreen></iframe>
-        </div>
-         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/KkVb3xCGxN4?si=JXYeFtZzt7mP0-kf" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/w2T11YTdX5Y?si=H98lIigTl7mQZJnD" frameborder="0" allowfullscreen></iframe>
-        </div>
-         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/-6zniTiEM6c?si=9yywuqwHzqH_8Mry" frameborder="0" allowfullscreen></iframe>
-        </div>
-         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/6lciWCrr_Ns?si=jjN0QtWNlOCB7wle" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-        <h1>CHUYÊN ĐỀ - HƯỚNG DẪN</h1>
-    <div class="video-grid">
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/OxMB64A2nzA?si=osOOv6n02Vhqaho5" frameborder="0" allowfullscreen></iframe>
-        </div>
-        
-    </div>
 </body>
 </html>
