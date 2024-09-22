@@ -3,89 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Học Trắc Nghiệm Online</title>
+    <title>Menu Nhiều Cấp</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 20px;
         }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin: 10px 0;
-            
-            color: Black;
-            padding: 5px;
-            border-radius: 5px;
             position: relative;
+            margin: 10px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
         }
         li ul {
             display: none;
             position: absolute;
             top: 0;
-            left: 15%;
-            padding-left: 0;
+            left: 100%;
             white-space: nowrap;
             background-color: #f4f4f4;
-           
+            margin-left: 10px;
+            z-index: 1; /* Hiển thị bên trên */
         }
         li ul li {
             background-color: #f4f4f4;
             color: #333;
-            padding: 15px;
-            left: 100%;
-            margin: 0;
-           
+            padding: 10px;
         }
         li:hover > ul {
             display: block;
         }
         li ul li:hover {
-            background-color:#ddd;
+            background-color: #ddd;
         }
     </style>
 </head>
 <body>
 
-<h1>Học Trắc Nghiệm Online</h1>
-
 <ul>
-    <li>1. Thi Quy Trình
+    <li>1. THI QUY TRÌNH
         <ul>
-            <li>1.1 Quy Trình An Toàn
+            <li>1.1 QUY TRÌNH AN TOÀN
                 <ul>
-                    <li>* Kiến Thức Chung</li>
-                    <li>* Cao Áp</li>
-                    <li>* Hạ Áp</li>
-                    <li>* Hỗ Trợ</li>
+                    <li>KIẾN THỨC CHUNG</li>
+                    <li>CAO ÁP</li>
+                    <li>HẠ ÁP</li>
                 </ul>
             </li>
-            <li>+ Quy Phạm Trang Bị Điện</li>
-            <li>1.2 Quy Trình Kinh Doanh
+            <li>1.2 QUY PHẠM TRANG BỊ ĐIỆN</li>
+            <li>1.3 QUY TRÌNH KINH DOANH
                 <ul>
-                    <li>* Chăm Sóc Khách Hàng</li>
-                    <li>* Dịch Vụ Điện</li>
+                    <li>GHI ĐIỆN</li>
+                    <li>ĐO ĐẾM</li>
+                    <li>HỆ THỐNG</li>
                 </ul>
             </li>
         </ul>
     </li>
-    <li>2. Thi Nghiệp Vụ
+    <li>2. THI NGHIỆP VỤ
         <ul>
-            <li>* Nghiệp Vụ 1</li>
-            <li>* Nghiệp Vụ 2</li>
+            <li>2.1 NGHIỆP VỤ 1</li>
+            <li>2.2 NGHIỆP VỤ 2</li>
         </ul>
     </li>
-    <li>3. Nâng Bậc Sát Hạch Nghề
+    <li>3. NÂNG BẬC SÁT HẠCH NGHỀ
         <ul>
-            <li>* Công Nhân Kỹ Thuật</li>
-            <li>* Công Nhân Kinh Doanh</li>
+            <li>3.1 CÔNG NHÂN KỸ THUẬT
+                <ul>
+                    <li>QLSC</li>
+                    <li>QLVH</li>
+                </ul>
+            </li>
+            <li>3.2 CÔNG NHÂN KINH DOANH
+                <ul>
+                    <li>PHẦN CHUNG</li>
+                    <li>KỸ THUẬT ĐIỆN</li>
+                    <li>3.2.1 CÔNG NHÂN TREO THÁO
+                        <ul>
+                            <li>AAAAA</li>
+                            <li>BBBBB</li>
+                        </ul>
+                    </li>
+                    <li>3.2.2 CÔNG NHÂN TỔNG HỢP
+                        <ul>
+                            <li>CCCCC</li>
+                            <li>DDDDD</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </li>
 </ul>
