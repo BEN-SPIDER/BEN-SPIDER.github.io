@@ -3,98 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Nhiều Cấp</title>
+    <title>Menu dạng cây</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 20px;
         }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
+
         li {
-            margin: 10px;
-            background-color: #f5f5f2;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            display: inline-block;
-            cursor: pointer;
+            margin: 5px 0;
         }
-        li ul {
+
+        ul ul {
             display: none;
-            position: absolute;
-            margin-top: 10px;
-            left: 0;
-            width: 100%;
-            background-color: #00ff77;
+            margin-left: 20px;
         }
-        li ul li {
-            background-color: #f5f5f2;
-            color: #333;
-            padding: 10px;
-            display: block;
-            width: 100%;
+
+        .toggle {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
         }
-        li.active ul {
-            display: block;
-        }
-        li ul li:hover {
-            background-color: #ddd;
-        }
+
     </style>
+    <script>
+        function toggleMenu(element) {
+            var submenu = element.nextElementSibling;
+            if (submenu.style.display === "none" || submenu.style.display === "") {
+                submenu.style.display = "block";
+            } else {
+                submenu.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
 
+<h1>Menu Dạng Cây</h1>
+
 <ul>
-    <li onclick="toggleMenu(this)">1. THI QUY TRÌNH
+    <li>
+        <span class="toggle" onclick="toggleMenu(this)">1. THI QUY TRÌNH</span>
         <ul>
-            <li onclick="toggleMenu(this)">1.1 QUY TRÌNH AN TOÀN
+            <li>
+                <span class="toggle" onclick="toggleMenu(this)">1.1 QUY TRÌNH AN TOÀN</span>
                 <ul>
                     <li>KIẾN THỨC CHUNG</li>
                     <li>CAO ÁP</li>
                     <li>HẠ ÁP</li>
                 </ul>
             </li>
-            
-            <li onclick="toggleMenu(this)"> 1.2 QUY PHẠM TRANG BỊ ĐIỆN </li>
-            <li onclick="toggleMenu(this)">1.3 QUY TRÌNH KINH DOANH
+            <li>1.2 QUY PHẠM TRANG BỊ ĐIỆN</li>
+            <li>
+                <span class="toggle" onclick="toggleMenu(this)">1.3 QUY TRÌNH KINH DOANH</span>
                 <ul>
                     <li>GHI ĐIỆN</li>
                     <li>ĐO ĐẾM</li>
                     <li>HỆ THỐNG</li>
                 </ul>
             </li>
-            
         </ul>
     </li>
-    <li onclick="toggleMenu(this)">2. THI NGHIỆP VỤ
+
+    <li>
+        <span class="toggle" onclick="toggleMenu(this)">2. THI NGHIỆP VỤ</span>
         <ul>
-            <li>2.1 NGHIỆP VỤ 1</li>
-            <li>2.2 NGHIỆP VỤ 2</li>
+            <li>NGHIỆP VỤ 1</li>
+            <li>NGHIỆP VỤ 2</li>
         </ul>
     </li>
-    <li onclick="toggleMenu(this)">3. NÂNG BẬC SÁT HẠCH NGHỀ
+
+    <li>
+        <span class="toggle" onclick="toggleMenu(this)">3. NÂNG BẬC SÁT HẠCH NGHỀ</span>
         <ul>
-            <li>3.1 CÔNG NHÂN KỸ THUẬT
+            <li>
+                <span class="toggle" onclick="toggleMenu(this)">3.1 CÔNG NHÂN KỸ THUẬT</span>
                 <ul>
                     <li>QLSC</li>
                     <li>QLVH</li>
                 </ul>
             </li>
-            <li onclick="toggleMenu(this)">3.2 CÔNG NHÂN KINH DOANH
+            <li>
+                <span class="toggle" onclick="toggleMenu(this)">3.2 CÔNG NHÂN KINH DOANH</span>
                 <ul>
                     <li>PHẦN CHUNG</li>
                     <li>KỸ THUẬT ĐIỆN</li>
-                    <li onclick="toggleMenu(this)">3.2.1 CÔNG NHÂN TREO THÁO
+                    <li>
+                        <span class="toggle" onclick="toggleMenu(this)">3.2.1 CÔNG NHÂN TREO THÁO</span>
                         <ul>
                             <li>AAAAA</li>
                             <li>BBBBB</li>
                         </ul>
                     </li>
-                    <li onclick="toggleMenu(this)">3.2.2 CÔNG NHÂN TỔNG HỢP
+                    <li>
+                        <span class="toggle" onclick="toggleMenu(this)">3.2.2 CÔNG NHÂN TỔNG HỢP</span>
                         <ul>
                             <li>CCCCC</li>
                             <li>DDDDD</li>
@@ -105,12 +111,6 @@
         </ul>
     </li>
 </ul>
-
-<script>
-    function toggleMenu(el) {
-        el.classList.toggle('active');
-    }
-</script>
 
 </body>
 </html>
