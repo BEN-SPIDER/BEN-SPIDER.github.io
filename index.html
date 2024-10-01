@@ -30,6 +30,18 @@
         }
 
     </style>
+    
+      <script>
+        function approveAccess() {
+            var password = prompt("Nhập mật khẩu để truy cập:");
+            if (password === "123456") { // Bạn có thể thay mật khẩu này
+                document.getElementById("protected-folder").style.display = "block";
+            } else {
+                alert("Mật khẩu sai! Bạn không có quyền truy cập.");
+            }
+        }
+    </script>
+    
     <script>
         function toggleMenu(element) {
             var submenu = element.nextElementSibling;
@@ -106,6 +118,16 @@
                             <li>CCCCC</li>
                             <li>DDDDD</li>
                         </ul>
+                    </li>
+                      <li>
+                        <button onclick="approveAccess()">Truy cập Thư mục Bảo vệ</button>
+                            <div id="protected-folder" class="protected-folder">
+                                <h2>Thư mục đã được bảo vệ</h2>
+                                <ul>
+                                    <li>Tài liệu 1</li>
+                                    <li>Tài liệu 2</li>
+                                </ul>
+                            </div>
                     </li>
                 </ul>
             </li>
